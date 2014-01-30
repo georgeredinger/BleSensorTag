@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger>
+
+    <dataSet config="main" >
+        <source path="/home/george/android/BleSensorTag/assets" >
+            <file
+                name="SensorTagImgA.bin"
+                path="/home/george/android/BleSensorTag/assets/SensorTagImgA.bin" />
+            <file
+                name="about.html"
+                path="/home/george/android/BleSensorTag/assets/about.html" />
+            <file
+                name="help_device.html"
+                path="/home/george/android/BleSensorTag/assets/help_device.html" />
+            <file
+                name="about.css"
+                path="/home/george/android/BleSensorTag/assets/about.css" />
+            <file
+                name="help_scan.html"
+                path="/home/george/android/BleSensorTag/assets/help_scan.html" />
+            <file
+                name="SensorTagImgB.bin"
+                path="/home/george/android/BleSensorTag/assets/SensorTagImgB.bin" />
+            <file
+                name="help.css"
+                path="/home/george/android/BleSensorTag/assets/help.css" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/george/android/BleSensorTag/build-types/debug/assets" />
+    </dataSet>
+
+</merger>
