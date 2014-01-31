@@ -17,7 +17,7 @@
   perform, display or sell this Software and/or its documentation for any purpose.
  
   YOU FURTHER ACKNOWLEDGE AND AGREE THAT THE SOFTWARE AND DOCUMENTATION ARE
-  PROVIDED “AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+  PROVIDED ï¿½AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED,
   INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY, TITLE,
   NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL
   TEXAS INSTRUMENTS OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER CONTRACT,
@@ -157,14 +157,14 @@ public class ScanView extends Fragment {
     if (scanning) {
       mScanTimer = new CustomTimer(mProgressBar, SCAN_TIMEOUT, mPgScanCallback);
       mStatus.setTextAppearance(mContext, R.style.statusStyle_Busy);
-      mBtnScan.setText("Stop");
+      mBtnScan.setText("Stop Scanning");
       mStatus.setText("Scanning...");
       mEmptyMsg.setText(R.string.nodevice);
       mActivity.updateGuiState();
     } else {
       // Indicate that scanning has stopped
       mStatus.setTextAppearance(mContext, R.style.statusStyle_Success);
-      mBtnScan.setText("Scan");
+      mBtnScan.setText("Scan For Sensors");
       mEmptyMsg.setText(R.string.scan_advice);
       mActivity.setProgressBarIndeterminateVisibility(false);
       mDeviceAdapter.notifyDataSetChanged();
